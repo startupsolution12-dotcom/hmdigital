@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Services – HMDigital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="services">
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="HMDigital home">
+        <div class="brand-logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" data-i18n-key="brand.name">HMDigital</span>
+          <span class="brand-tagline" data-i18n-key="brand.tagline">
+            Quietly powerful digital partnerships.
+          </span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n-key="nav.home">Home</a></li>
+          <li><a href="services.html" class="nav-link nav-link-active" data-i18n-key="nav.services">Services</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n-key="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav-link" data-i18n-key="nav.testimonials">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n-key="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="header-controls">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon theme-icon-dark">🌙</span>
+            <span class="theme-icon theme-icon-light">☀️</span>
+          </button>
+          <div class="lang-switch" aria-label="Language selector">
+            <button class="lang-btn lang-active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="page-kicker" data-i18n-key="services.kicker">Services</p>
+          <h1 class="page-title" data-i18n-key="services.pageTitle">
+            A precise set of capabilities, delivered with corporate discipline.
+          </h1>
+          <p class="page-subtitle" data-i18n-key="services.pageSubtitle">
+            We’re senior, opinionated and direct about what will move the needle for you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cards-grid cards-grid-2">
+        <article class="card service-card-large reveal" data-tilt>
+          <div class="service-card-header">
+            <div class="service-icon">WD</div>
+            <div>
+              <h2 data-i18n-key="services.webdev.title">Web Development</h2>
+              <p class="service-label" data-i18n-key="services.webdev.label">
+                Custom builds • Replatforming • Optimisation
+              </p>
+            </div>
+          </div>
+          <p data-i18n-key="services.webdev.detail">
+            From marketing sites to product interfaces, we build performant, maintainable experiences using
+            modern stacks. We document decisions and hand over cleanly to your internal teams.
+          </p>
+        </article>
+
+        <article class="card service-card-large reveal" data-tilt>
+          <div class="service-card-header">
+            <div class="service-icon">UX</div>
+            <div>
+              <h2 data-i18n-key="services.webdesign.title">Web Design</h2>
+              <p class="service-label" data-i18n-key="services.webdesign.label">
+                UX • UI • Design systems
+              </p>
+            </div>
+          </div>
+          <p data-i18n-key="services.webdesign.detail">
+            We design clear, premium interfaces that respect your brand and your users’ time. Every layout is
+            purposeful, with conversions and clarity at the center.
+          </p>
+        </article>
+
+        <article class="card service-card-large reveal" data-tilt>
+          <div class="service-card-header">
+            <div class="service-icon">APP</div>
+            <div>
+              <h2 data-i18n-key="services.appdev.title">App Development</h2>
+              <p class="service-label" data-i18n-key="services.appdev.label">
+                Web apps • Internal tools • MVPs
+              </p>
+            </div>
+          </div>
+          <p data-i18n-key="services.appdev.detail">
+            We create focused applications that integrate with your existing stack, automate manual work
+            and keep performance and security in focus.
+          </p>
+        </article>
+
+        <article class="card service-card-large reveal" data-tilt>
+          <div class="service-card-header">
+            <div class="service-icon">SEO</div>
+            <div>
+              <h2 data-i18n-key="services.seo.title">SEO</h2>
+              <p class="service-label" data-i18n-key="services.seo.label">
+                Technical audits • Content strategy
+              </p>
+            </div>
+          </div>
+          <p data-i18n-key="services.seo.detail">
+            We align site structure, performance and content so search engines can understand and rank you.
+            No gimmicks, just solid foundations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-cta-large">
+      <div class="container cta-panel reveal">
+        <div>
+          <h2 data-i18n-key="services.cta.title">
+            Need help prioritising what to do first?
+          </h2>
+          <p data-i18n-key="services.cta.copy">
+            Share your current site and goals. We’ll map out a phased approach that respects your budget
+            and internal capacity.
+          </p>
+        </div>
+        <a href="contact.html" class="btn btn-primary" data-i18n-key="services.cta.button">
+          Talk to HMDigital
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo">
+        </div>
+        <span class="brand-name">HMDigital</span>
+        <span class="footer-copy" data-i18n-key="footer.copy">
+          Quietly building confident digital experiences.
+        </span>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; <span id="year"></span> HMDigital</span>
+        <span class="footer-dot">•</span>
+        <a href="mailto:hello@hmdigital.agency" class="footer-link">hello@hmdigital.agency</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+

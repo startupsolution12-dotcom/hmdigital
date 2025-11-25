@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – HMDigital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="HMDigital home">
+        <div class="brand-logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" data-i18n-key="brand.name">HMDigital</span>
+          <span class="brand-tagline" data-i18n-key="brand.tagline">
+            Quietly powerful digital partnerships.
+          </span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n-key="nav.home">Home</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n-key="nav.services">Services</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n-key="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav-link" data-i18n-key="nav.testimonials">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link nav-link-active" data-i18n-key="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="header-controls">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon theme-icon-dark">🌙</span>
+            <span class="theme-icon theme-icon-light">☀️</span>
+          </button>
+          <div class="lang-switch" aria-label="Language selector">
+            <button class="lang-btn lang-active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="page-kicker" data-i18n-key="contact.kicker">Contact</p>
+          <h1 class="page-title" data-i18n-key="contact.pageTitle">
+            Share a few details and we’ll respond within two business days.
+          </h1>
+          <p class="page-subtitle" data-i18n-key="contact.pageSubtitle">
+            No hard sell. Just a clear view of how we can help and what it might cost.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form class="card contact-form reveal" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="field-label" for="name" data-i18n-key="contact.form.name.label">Your name</label>
+              <input id="name" name="name" type="text"
+                     data-i18n-placeholder="contact.form.name.placeholder"
+                     placeholder="Full name">
+              <p class="field-error" data-error-for="name"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="field-label" for="email" data-i18n-key="contact.form.email.label">Email</label>
+              <input id="email" name="email" type="email"
+                     data-i18n-placeholder="contact.form.email.placeholder"
+                     placeholder="you@company.com">
+              <p class="field-error" data-error-for="email"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="field-label" for="budget" data-i18n-key="contact.form.budget.label">
+                Approximate budget
+              </label>
+              <input id="budget" name="budget" type="text"
+                     data-i18n-placeholder="contact.form.budget.placeholder"
+                     placeholder="e.g. $5k–$15k">
+              <p class="field-error" data-error-for="budget"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="field-label" for="message" data-i18n-key="contact.form.message.label">
+                Project or context
+              </label>
+              <textarea id="message" name="message" rows="4"
+                        data-i18n-placeholder="contact.form.message.placeholder"
+                        placeholder="Tell us about your current site, goals and timeline."></textarea>
+              <p class="field-error" data-error-for="message"></p>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit" data-i18n-key="contact.form.submit">
+            Send message
+          </button>
+
+          <p class="form-note" data-i18n-key="contact.form.note">
+            This form is for demonstration only – once submitted, you’ll see a success state instead of sending data.
+          </p>
+
+          <div class="form-success" aria-live="polite" hidden>
+            <p data-i18n-key="contact.form.success">
+              Thank you. Your message has been recorded locally. In a real project, this is where we would confirm your submission.
+            </p>
+          </div>
+        </form>
+
+        <aside class="contact-aside reveal">
+          <h2 data-i18n-key="contact.aside.title">Prefer email?</h2>
+          <p data-i18n-key="contact.aside.copy">
+            You can also share a short brief directly. Include your current URL, budget range and ideal start date.
+          </p>
+          <a href="mailto:hello@hmdigital.agency" class="link-inline">hello@hmdigital.agency</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo">
+        </div>
+        <span class="brand-name">HMDigital</span>
+        <span class="footer-copy" data-i18n-key="footer.copy">
+          Quietly building confident digital experiences.
+        </span>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; <span id="year"></span> HMDigital</span>
+        <span class="footer-dot">•</span>
+        <a href="mailto:hello@hmdigital.agency" class="footer-link">hello@hmdigital.agency</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
