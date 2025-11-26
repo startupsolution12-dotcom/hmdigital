@@ -14,12 +14,13 @@
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="HMDigital home">
         <div class="brand-logo">
-          <img src="assets/hmdigital.png" alt="HMDigital logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+          <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
         </div>
         <div class="brand-text">
-          <span class="brand-name" data-i18n-key="brand.name">HMDigital</span>
-          <span class="brand-tagline" data-i18n-key="brand.tagline">
-            Quietly powerful digital partnerships.
+          <span class="brand-name" data-i18n="brand.name">HMDigital</span>
+          <span class="brand-tagline" data-i18n="brand.tagline">
+            Digital outcomes with boardroom confidence.
           </span>
         </div>
       </a>
@@ -28,21 +29,23 @@
         <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
           <span></span><span></span>
         </button>
-
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link" data-i18n-key="nav.home">Home</a></li>
-          <li><a href="services.html" class="nav-link" data-i18n-key="nav.services">Services</a></li>
-          <li><a href="about.html" class="nav-link nav-link-active" data-i18n-key="nav.about">About</a></li>
-          <li><a href="testimonials.html" class="nav-link" data-i18n-key="nav.testimonials">Testimonials</a></li>
-          <li><a href="contact.html" class="nav-link" data-i18n-key="nav.contact">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" class="nav-link nav-link-active" data-i18n="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
-        <div class="header-controls">
+        <div class="header-right">
+          <div class="social-header">
+            <a href="#">in</a><a href="#">X</a><a href="#">IG</a>
+          </div>
           <button class="theme-toggle" aria-label="Toggle theme">
             <span class="theme-icon theme-icon-dark">🌙</span>
             <span class="theme-icon theme-icon-light">☀️</span>
           </button>
-          <div class="lang-switch" aria-label="Language selector">
+          <div class="lang-switch">
             <button class="lang-btn lang-active" data-lang="en">EN</button>
             <button class="lang-btn" data-lang="fr">FR</button>
           </div>
@@ -55,13 +58,13 @@
     <section class="page-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="page-kicker" data-i18n-key="about.kicker">About HMDigital</p>
-          <h1 class="page-title" data-i18n-key="about.pageTitle">
-            A small, senior team with a big-company mindset.
+          <p class="page-kicker" data-i18n="about.kicker">About</p>
+          <h1 class="page-title" data-i18n="about.pageTitle">
+            A senior, compact team with a big-company mindset.
           </h1>
-          <p class="page-subtitle" data-i18n-key="about.pageSubtitle">
-            We operate with the calm, structure and reliability you expect from a large agency, without
-            the overhead or noise.
+          <p class="page-subtitle" data-i18n="about.pageSubtitle">
+            HMDigital operates with the calm, structure and reliability of a large agency, while staying
+            lean and close to your reality.
           </p>
         </div>
       </div>
@@ -69,61 +72,68 @@
 
     <section class="section">
       <div class="container about-grid">
-        <div class="about-block card reveal" data-tilt>
-          <h2 data-i18n-key="about.who.title">Who we are</h2>
-          <p data-i18n-key="about.who.copy">
-            HMDigital is an independent studio focused on delivering corporate-grade digital work for
-            teams that value clarity, precision and results over hype.
+        <article class="card about-block reveal" data-tilt>
+          <h2 data-i18n="about.who.title">Who we are</h2>
+          <p data-i18n="about.who.copy">
+            HMDigital is an independent studio focused on corporate-level digital execution for teams who
+            value clarity, precision and results over noise.
           </p>
-        </div>
+        </article>
 
-        <div class="about-block card reveal" data-tilt>
-          <h2 data-i18n-key="about.mission.title">Our mission</h2>
-          <p data-i18n-key="about.mission.copy">
+        <article class="card about-block reveal" data-tilt>
+          <h2 data-i18n="about.mission.title">Our mission</h2>
+          <p data-i18n="about.mission.copy">
             We build websites, apps and SEO foundations that earn trust from your clients and stakeholders,
-            while staying maintainable for your teams.
+            while staying maintainable for your internal team.
           </p>
-        </div>
+        </article>
 
-        <div class="about-block card reveal" data-tilt>
-          <h2 data-i18n-key="about.values.title">Values</h2>
+        <article class="card about-block reveal" data-tilt>
+          <h2 data-i18n="about.values.title">Values</h2>
           <ul class="values-list">
-            <li data-i18n-key="about.values.1">
+            <li data-i18n="about.values.1">
               Clarity over complexity. We remove noise and design around essentials.
             </li>
-            <li data-i18n-key="about.values.2">
-              Reliability over hype. We value stability and well-tested decisions.
+            <li data-i18n="about.values.2">
+              Reliability over hype. We favour stable, well-tested decisions.
             </li>
-            <li data-i18n-key="about.values.3">
-              Partnership over one-off projects. We aim to be a long-term, trusted collaborator.
+            <li data-i18n="about.values.3">
+              Partnership over one-offs. We aim to be a trusted, long-term collaborator.
             </li>
           </ul>
-        </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="assets/hmdigital.png" alt="HMDigital logo">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+            <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
+          </div>
+          <div>
+            <span class="brand-name">HMDigital</span>
+            <span class="footer-copy" data-i18n="footer.copy">
+              Quietly building confident digital experiences.
+            </span>
+          </div>
         </div>
-        <span class="brand-name">HMDigital</span>
-        <span class="footer-copy" data-i18n-key="footer.copy">
-          Quietly building confident digital experiences.
-        </span>
+        <div class="footer-social">
+          <span class="footer-social-label">Social</span>
+          <div class="footer-social-links">
+            <a href="#">LinkedIn</a><a href="#">X</a><a href="#">Instagram</a><a href="#">Behance</a>
+          </div>
+        </div>
       </div>
       <div class="footer-meta">
         <span>&copy; <span id="year"></span> HMDigital</span>
         <span class="footer-dot">•</span>
-        <a href="mailto:hello@hmdigital.agency" class="footer-link">hello@hmdigital.agency</a>
+        <a href="mailto:info@hmdigital.ch" class="footer-link">info@hmdigital.ch</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
-
-
-
-

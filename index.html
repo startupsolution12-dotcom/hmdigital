@@ -2,22 +2,20 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>HMDigital – Digital Experiences for Serious Teams</title>
+  <title>HMDigital – Corporate Digital Experiences Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body data-page="home">
-  <!-- Intro splash -->
+  <!-- Intro splash (dark logo only) -->
   <div class="intro-overlay">
     <div class="intro-inner">
       <div class="intro-logo">
         <img src="assets/hmdigital.png" alt="HMDigital logo">
       </div>
-      <div class="intro-text">
-        <p class="intro-kicker">HMDigital</p>
-        <p class="intro-line">Launching your new corporate experience…</p>
-      </div>
+      <p class="intro-kicker">HMDigital</p>
+      <p class="intro-line">Preparing your corporate-grade experience…</p>
     </div>
   </div>
 
@@ -27,12 +25,13 @@
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="HMDigital home">
         <div class="brand-logo">
-          <img src="assets/hmdigital.png" alt="HMDigital logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+          <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
         </div>
         <div class="brand-text">
-          <span class="brand-name" data-i18n-key="brand.name">HMDigital</span>
-          <span class="brand-tagline" data-i18n-key="brand.tagline">
-            Quietly powerful digital partnerships.
+          <span class="brand-name" data-i18n="brand.name">HMDigital</span>
+          <span class="brand-tagline" data-i18n="brand.tagline">
+            Digital outcomes with boardroom confidence.
           </span>
         </div>
       </a>
@@ -43,21 +42,25 @@
         </button>
 
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link nav-link-active" data-i18n-key="nav.home">Home</a></li>
-          <li><a href="services.html" class="nav-link" data-i18n-key="nav.services">Services</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n-key="nav.about">About</a></li>
-          <li><a href="testimonials.html" class="nav-link" data-i18n-key="nav.testimonials">Testimonials</a></li>
-          <li><a href="contact.html" class="nav-link" data-i18n-key="nav.contact">Contact</a></li>
+          <li><a href="index.html" class="nav-link nav-link-active" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
-        <div class="header-controls">
-          <!-- Theme toggle -->
+        <div class="header-right">
+          <div class="social-header">
+            <a href="#" aria-label="HMDigital on LinkedIn">in</a>
+            <a href="#" aria-label="HMDigital on X">X</a>
+            <a href="#" aria-label="HMDigital on Instagram">IG</a>
+          </div>
+
           <button class="theme-toggle" aria-label="Toggle theme">
             <span class="theme-icon theme-icon-dark">🌙</span>
             <span class="theme-icon theme-icon-light">☀️</span>
           </button>
 
-          <!-- Language -->
           <div class="lang-switch" aria-label="Language selector">
             <button class="lang-btn lang-active" data-lang="en">EN</button>
             <button class="lang-btn" data-lang="fr">FR</button>
@@ -70,77 +73,88 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-bg-orbits" aria-hidden="true">
-        <div class="hero-orbit hero-orbit-1"></div>
-        <div class="hero-orbit hero-orbit-2"></div>
+      <div class="hero-layers" aria-hidden="true">
+        <div class="hero-layer hero-layer-grid" data-depth="0.05"></div>
+        <div class="hero-layer hero-layer-panel" data-depth="0.12"></div>
+        <div class="hero-layer hero-layer-orbit hero-layer-orbit-gold" data-depth="0.2"></div>
+        <div class="hero-layer hero-layer-orbit hero-layer-orbit-blue" data-depth="0.28"></div>
       </div>
 
       <div class="container hero-inner">
-        <div class="hero-content">
-          <p class="hero-kicker" data-intro="stagger" data-i18n-key="hero.kicker">
-            Digital partner for teams that need to look serious.
+        <div class="hero-main">
+          <p class="hero-kicker" data-intro data-i18n="hero.kicker">
+            Studio-level creativity. Corporate-level discipline.
           </p>
-          <h1 class="hero-title" data-intro="stagger" data-i18n-key="hero.title">
-            Corporate-grade web experiences with startup speed.
+          <h1 class="hero-title" data-intro data-i18n="hero.title">
+            We architect websites and apps that belong in the boardroom.
           </h1>
-          <p class="hero-subtitle" data-intro="stagger" data-i18n-key="hero.subtitle">
-            We combine clean design, reliable engineering, and calm communication to ship sites and apps
-            your clients actually trust.
+          <p class="hero-subtitle" data-intro data-i18n="hero.subtitle">
+            HMDigital combines senior strategy, precise design and clean engineering to build
+            digital experiences your clients, investors and partners actually trust.
           </p>
 
-          <div class="hero-actions" data-intro="stagger">
-            <a href="contact.html" class="btn btn-primary" data-i18n-key="hero.cta.primary">
-              Schedule a call
+          <div class="hero-actions" data-intro>
+            <a href="contact.html" class="btn btn-primary" data-i18n="hero.cta.primary">
+              Book a strategy call
             </a>
-            <a href="services.html" class="btn btn-ghost" data-i18n-key="hero.cta.secondary">
-              View our capabilities
+            <a href="services.html" class="btn btn-ghost" data-i18n="hero.cta.secondary">
+              View detailed services
             </a>
           </div>
 
+          <p class="hero-footnote" data-intro data-i18n="hero.meta.clients">
+            Made for founders, marketing leaders and product teams that need to look established.
+          </p>
+
           <div class="hero-metrics reveal">
             <div class="metric">
-              <span class="metric-label" data-i18n-key="hero.stats.1.label">Typical project span</span>
-              <span class="metric-value" data-i18n-key="hero.stats.1.value">4–8 weeks</span>
+              <span class="metric-label" data-i18n="hero.stats.1.label">Typical project span</span>
+              <span class="metric-value" data-i18n="hero.stats.1.value">4–8 weeks</span>
             </div>
             <div class="metric">
-              <span class="metric-label" data-i18n-key="hero.stats.2.label">Core focus</span>
-              <span class="metric-value" data-i18n-key="hero.stats.2.value">Web, apps, SEO</span>
+              <span class="metric-label" data-i18n="hero.stats.2.label">Core focus</span>
+              <span class="metric-value" data-i18n="hero.stats.2.value">Web, apps, SEO</span>
             </div>
             <div class="metric">
-              <span class="metric-label" data-i18n-key="hero.stats.3.label">Engagements</span>
-              <span class="metric-value" data-i18n-key="hero.stats.3.value">Flexible, transparent</span>
+              <span class="metric-label" data-i18n="hero.stats.3.label">Engagements</span>
+              <span class="metric-value" data-i18n="hero.stats.3.value">Retainer & project</span>
             </div>
           </div>
         </div>
 
-        <aside class="hero-aside">
-          <!-- 3D video panel -->
-          <div class="hero-media card reveal" data-tilt>
-            <div class="hero-media-header">
-              <div class="hero-media-logo">
-                <img src="assets/hmdigital.png" alt="HMDigital logo">
+        <aside class="hero-side">
+          <!-- HERO SHOWREEL PLACEHOLDER CARD -->
+          <div class="hero-case card" data-tilt>
+            <div class="hero-case-header">
+              <div class="hero-case-logo">
+                <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+                <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
               </div>
-              <div class="hero-media-text">
-                <p class="hero-media-title">HMDigital overview</p>
-                <p class="hero-media-sub">Abstract 3D video / case loop</p>
+              <div>
+                <p class="hero-case-title">HMDigital overview</p>
+                <p class="hero-case-sub">3D brand showreel · coming soon</p>
               </div>
             </div>
 
-            <div class="hero-video-wrap">
-              <video
-                class="hero-video"
-                src="assets/hero-loop.mp4"
-                autoplay
-                muted
-                loop
-                playsinline
-              ></video>
-              <div class="hero-video-overlay"></div>
+            <div class="hero-case-video polished-placeholder">
+              <div class="placeholder-animated-bg"></div>
+              <div class="placeholder-content">
+                <span class="placeholder-title">3D identity loop</span>
+                <span class="placeholder-sub">Showreel will appear here when ready</span>
+              </div>
             </div>
 
-            <p class="hero-media-foot">
-              Replace <code>assets/hero-loop.mp4</code> with your own looped video to see it here.
+            <p class="hero-case-meta">
+              This slot is reserved for a short 3D overview of HMDigital’s work and capabilities.
             </p>
+          </div>
+
+          <div class="hero-trust reveal">
+            <p class="hero-trust-label">Recently crafted</p>
+            <div class="hero-trust-logos">
+              <span>Startup Solution</span>
+              <span>Le Palais Shahnawaz</span>
+            </div>
           </div>
         </aside>
       </div>
@@ -149,63 +163,79 @@
     <!-- SERVICES OVERVIEW -->
     <section class="section section-alt">
       <div class="container section-header reveal">
-        <h2 class="section-title" data-i18n-key="home.services.title">
-          A focused set of services, delivered like a large agency.
+        <h2 class="section-title" data-i18n="home.services.title">
+          A focused corporate services stack.
         </h2>
-        <p class="section-subtitle" data-i18n-key="home.services.subtitle">
-          We stay lean but operate with enterprise-level processes, documentation and reliability.
+        <p class="section-subtitle" data-i18n="home.services.subtitle">
+          We go deep on the digital pieces that actually matter at leadership level.
         </p>
       </div>
 
       <div class="container cards-grid cards-grid-4">
         <article class="card service-card reveal" data-tilt>
-          <div class="service-icon">WD</div>
-          <h3 data-i18n-key="services.webdev.title">Web Development</h3>
-          <p data-i18n-key="services.webdev.copy">
-            Robust builds on modern stacks with performance, security and maintainability at the core.
+          <h3 data-i18n="services.webdev.title">Web Development</h3>
+          <p data-i18n="services.webdev.copy">
+            Enterprise-ready builds with clear architecture and tidy handover.
           </p>
+          <ul class="service-bullets">
+            <li>Corporate & marketing sites</li>
+            <li>Refactors & replatforms</li>
+            <li>Performance & security passes</li>
+          </ul>
         </article>
 
         <article class="card service-card reveal" data-tilt>
-          <div class="service-icon">UX</div>
-          <h3 data-i18n-key="services.webdesign.title">Web Design</h3>
-          <p data-i18n-key="services.webdesign.copy">
-            Minimal, conversion-driven interfaces tailored to your brand and audience.
+          <h3 data-i18n="services.webdesign.title">Web Design</h3>
+          <p data-i18n="services.webdesign.copy">
+            Minimal, confident interfaces that feel premium without being loud.
           </p>
+          <ul class="service-bullets">
+            <li>UX foundations & flows</li>
+            <li>UI systems & components</li>
+            <li>Design documentation</li>
+          </ul>
         </article>
 
         <article class="card service-card reveal" data-tilt>
-          <div class="service-icon">APP</div>
-          <h3 data-i18n-key="services.appdev.title">App Development</h3>
-          <p data-i18n-key="services.appdev.copy">
-            Web and internal apps that streamline workflows and scale across teams.
+          <h3 data-i18n="services.appdev.title">App Development</h3>
+          <p data-i18n="services.appdev.copy">
+            Interfaces and internal tools that match how your teams really work.
           </p>
+          <ul class="service-bullets">
+            <li>Web apps & portals</li>
+            <li>Internal dashboards</li>
+            <li>Controlled MVPs</li>
+          </ul>
         </article>
 
         <article class="card service-card reveal" data-tilt>
-          <div class="service-icon">SEO</div>
-          <h3 data-i18n-key="services.seo.title">SEO</h3>
-          <p data-i18n-key="services.seo.copy">
-            Technical SEO and content structure that quietly move you up in search.
+          <h3 data-i18n="services.seo.title">SEO</h3>
+          <p data-i18n="services.seo.copy">
+            Solid foundations that compound quietly over time.
           </p>
+          <ul class="service-bullets">
+            <li>Technical audits</li>
+            <li>Information architecture</li>
+            <li>Content / keyword mapping</li>
+          </ul>
         </article>
       </div>
 
       <div class="container section-cta reveal">
-        <a href="services.html" class="link-inline" data-i18n-key="home.services.link">
-          Explore our service breakdown
+        <a href="services.html" class="link-inline" data-i18n="home.services.link">
+          View detailed services
         </a>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (TEXT-ONLY CARDS, NO THUMBNAILS) -->
     <section class="section">
       <div class="container section-header reveal">
-        <h2 class="section-title" data-i18n-key="home.projects.title">
+        <h2 class="section-title" data-i18n="home.projects.title">
           Selected recent projects.
         </h2>
-        <p class="section-subtitle" data-i18n-key="home.projects.subtitle">
-          Concrete work for teams that need to look established and operate with confidence.
+        <p class="section-subtitle" data-i18n="home.projects.subtitle">
+          A glimpse of work for teams that need to look established and reliable.
         </p>
       </div>
 
@@ -213,19 +243,12 @@
         <a class="card project-card reveal" data-tilt
            href="https://www.startupsolution.online"
            target="_blank" rel="noopener">
-          <div class="project-thumb">
-            <img
-              src="assets/startupsolution-thumb@1x.jpg"
-              srcset="assets/startupsolution-thumb@1x.jpg 1x, assets/startupsolution-thumb@2x.jpg 2x"
-              alt="Startup Solution website preview"
-              loading="lazy">
-          </div>
           <div class="project-body">
-            <h3 data-i18n-key="projects.startupsolution.title">Startup Solution</h3>
-            <p data-i18n-key="projects.startupsolution.copy">
-              A clear, metrics-focused presence for a lean consultancy.
+            <h3 data-i18n="projects.startupsolution.title">Startup Solution</h3>
+            <p data-i18n="projects.startupsolution.copy">
+              A clear, metrics-led presence for a modern consultancy.
             </p>
-            <span class="project-link-label" data-i18n-key="projects.viewSite">
+            <span class="project-link-label" data-i18n="projects.viewSite">
               Open live site
             </span>
           </div>
@@ -234,19 +257,12 @@
         <a class="card project-card reveal" data-tilt
            href="https://www.lepalaisshahnawaz.com/fr"
            target="_blank" rel="noopener">
-          <div class="project-thumb">
-            <img
-              src="assets/lepalaisshahnawaz-thumb@1x.jpg"
-              srcset="assets/lepalaisshahnawaz-thumb@1x.jpg 1x, assets/lepalaisshahnawaz-thumb@2x.jpg 2x"
-              alt="Le Palais Shahnawaz website preview"
-              loading="lazy">
-          </div>
           <div class="project-body">
-            <h3 data-i18n-key="projects.palais.title">Le Palais Shahnawaz</h3>
-            <p data-i18n-key="projects.palais.copy">
-              A rich hospitality experience that still feels clean and corporate.
+            <h3 data-i18n="projects.palais.title">Le Palais Shahnawaz</h3>
+            <p data-i18n="projects.palais.copy">
+              A luxurious yet structured experience for a hospitality brand.
             </p>
-            <span class="project-link-label" data-i18n-key="projects.viewSite">
+            <span class="project-link-label" data-i18n="projects.viewSite">
               Open live site
             </span>
           </div>
@@ -258,15 +274,16 @@
     <section class="section section-cta-large">
       <div class="container cta-panel reveal">
         <div>
-          <h2 data-i18n-key="home.cta.title">
-            Ready to look like the serious partner you are?
+          <h2 data-i18n="home.cta.title">
+            Ready to present your company at a new level?
           </h2>
-          <p data-i18n-key="home.cta.copy">
-            Share your current situation and constraints. We’ll respond with a clear, budget-aligned proposal.
+          <p data-i18n="home.cta.copy">
+            Share where you are today and where you need to be in 6–12 months. We’ll reply with a clear,
+            costed plan and realistic timeline.
           </p>
         </div>
-        <a href="contact.html" class="btn btn-primary" data-i18n-key="home.cta.button">
-          Start the project conversation
+        <a href="contact.html" class="btn btn-primary" data-i18n="home.cta.button">
+          Start the conversation
         </a>
       </div>
     </section>
@@ -274,22 +291,37 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="assets/hmdigital.png" alt="HMDigital logo">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+            <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
+          </div>
+          <div>
+            <span class="brand-name">HMDigital</span>
+            <span class="footer-copy" data-i18n="footer.copy">
+              Quietly building confident digital experiences.
+            </span>
+          </div>
         </div>
-        <span class="brand-name">HMDigital</span>
-        <span class="footer-copy" data-i18n-key="footer.copy">
-          Quietly building confident digital experiences.
-        </span>
+
+        <div class="footer-social">
+          <span class="footer-social-label">Social</span>
+          <div class="footer-social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">X</a>
+            <a href="#">Instagram</a>
+            <a href="#">Behance</a>
+          </div>
+        </div>
       </div>
+
       <div class="footer-meta">
         <span>&copy; <span id="year"></span> HMDigital</span>
         <span class="footer-dot">•</span>
-        <a href="mailto:hello@hmdigital.agency" class="footer-link">hello@hmdigital.agency</a>
+        <a href="mailto:info@hmdigital.ch" class="footer-link">info@hmdigital.ch</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
-

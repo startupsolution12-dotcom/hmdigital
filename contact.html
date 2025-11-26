@@ -14,12 +14,13 @@
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="HMDigital home">
         <div class="brand-logo">
-          <img src="assets/hmdigital.png" alt="HMDigital logo">
+          <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+          <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
         </div>
         <div class="brand-text">
-          <span class="brand-name" data-i18n-key="brand.name">HMDigital</span>
-          <span class="brand-tagline" data-i18n-key="brand.tagline">
-            Quietly powerful digital partnerships.
+          <span class="brand-name" data-i18n="brand.name">HMDigital</span>
+          <span class="brand-tagline" data-i18n="brand.tagline">
+            Digital outcomes with boardroom confidence.
           </span>
         </div>
       </a>
@@ -28,21 +29,23 @@
         <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
           <span></span><span></span>
         </button>
-
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link" data-i18n-key="nav.home">Home</a></li>
-          <li><a href="services.html" class="nav-link" data-i18n-key="nav.services">Services</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n-key="nav.about">About</a></li>
-          <li><a href="testimonials.html" class="nav-link" data-i18n-key="nav.testimonials">Testimonials</a></li>
-          <li><a href="contact.html" class="nav-link nav-link-active" data-i18n-key="nav.contact">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav-link" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link nav-link-active" data-i18n="nav.contact">Contact</a></li>
         </ul>
 
-        <div class="header-controls">
+        <div class="header-right">
+          <div class="social-header">
+            <a href="#">in</a><a href="#">X</a><a href="#">IG</a>
+          </div>
           <button class="theme-toggle" aria-label="Toggle theme">
             <span class="theme-icon theme-icon-dark">🌙</span>
             <span class="theme-icon theme-icon-light">☀️</span>
           </button>
-          <div class="lang-switch" aria-label="Language selector">
+          <div class="lang-switch">
             <button class="lang-btn lang-active" data-lang="en">EN</button>
             <button class="lang-btn" data-lang="fr">FR</button>
           </div>
@@ -55,11 +58,11 @@
     <section class="page-hero">
       <div class="container page-hero-inner">
         <div>
-          <p class="page-kicker" data-i18n-key="contact.kicker">Contact</p>
-          <h1 class="page-title" data-i18n-key="contact.pageTitle">
-            Share a few details and we’ll respond within two business days.
+          <p class="page-kicker" data-i18n="contact.kicker">Contact</p>
+          <h1 class="page-title" data-i18n="contact.pageTitle">
+            Share a few details. We’ll respond within two business days.
           </h1>
-          <p class="page-subtitle" data-i18n-key="contact.pageSubtitle">
+          <p class="page-subtitle" data-i18n="contact.pageSubtitle">
             No hard sell. Just a clear view of how we can help and what it might cost.
           </p>
         </div>
@@ -71,9 +74,8 @@
         <form class="card contact-form reveal" novalidate>
           <div class="form-row">
             <div class="form-field">
-              <label class="field-label" for="name" data-i18n-key="contact.form.name.label">Your name</label>
-              <input id="name" name="name" type="text"
-                     data-i18n-placeholder="contact.form.name.placeholder"
+              <label class="field-label" for="name" data-i18n="contact.form.name.label">Your name</label>
+              <input id="name" name="name" type="text" data-i18n-placeholder="contact.form.name.placeholder"
                      placeholder="Full name">
               <p class="field-error" data-error-for="name"></p>
             </div>
@@ -81,7 +83,7 @@
 
           <div class="form-row">
             <div class="form-field">
-              <label class="field-label" for="email" data-i18n-key="contact.form.email.label">Email</label>
+              <label class="field-label" for="email" data-i18n="contact.form.email.label">Email</label>
               <input id="email" name="email" type="email"
                      data-i18n-placeholder="contact.form.email.placeholder"
                      placeholder="you@company.com">
@@ -91,7 +93,7 @@
 
           <div class="form-row">
             <div class="form-field">
-              <label class="field-label" for="budget" data-i18n-key="contact.form.budget.label">
+              <label class="field-label" for="budget" data-i18n="contact.form.budget.label">
                 Approximate budget
               </label>
               <input id="budget" name="budget" type="text"
@@ -103,37 +105,45 @@
 
           <div class="form-row">
             <div class="form-field">
-              <label class="field-label" for="message" data-i18n-key="contact.form.message.label">
+              <label class="field-label" for="message" data-i18n="contact.form.message.label">
                 Project or context
               </label>
               <textarea id="message" name="message" rows="4"
                         data-i18n-placeholder="contact.form.message.placeholder"
-                        placeholder="Tell us about your current site, goals and timeline."></textarea>
+                        placeholder="Tell us about your site, goals and timing."></textarea>
               <p class="field-error" data-error-for="message"></p>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary form-submit" data-i18n-key="contact.form.submit">
+          <button type="submit" class="btn btn-primary form-submit" data-i18n="contact.form.submit">
             Send message
           </button>
 
-          <p class="form-note" data-i18n-key="contact.form.note">
-            This form is for demonstration only – once submitted, you’ll see a success state instead of sending data.
+          <p class="form-note" data-i18n="contact.form.note">
+            This form uses front-end JavaScript to record your details and can forward them to a Google Sheet
+            or document via a simple endpoint.
           </p>
 
           <div class="form-success" aria-live="polite" hidden>
-            <p data-i18n-key="contact.form.success">
-              Thank you. Your message has been recorded locally. In a real project, this is where we would confirm your submission.
+            <p data-i18n="contact.form.success">
+              Thank you. Your message has been recorded. If a spreadsheet endpoint is configured, your details
+              have also been sent there.
             </p>
           </div>
         </form>
 
         <aside class="contact-aside reveal">
-          <h2 data-i18n-key="contact.aside.title">Prefer email?</h2>
-          <p data-i18n-key="contact.aside.copy">
-            You can also share a short brief directly. Include your current URL, budget range and ideal start date.
+          <h2 data-i18n="contact.aside.title">Prefer email?</h2>
+          <p data-i18n="contact.aside.copy">
+            You can also send a short brief by email. Include your current URL, budget range, and ideal start date.
           </p>
-          <a href="mailto:hello@hmdigital.agency" class="link-inline">hello@hmdigital.agency</a>
+          <a href="mailto:info@hmdigital.ch" class="link-inline">info@hmdigital.ch</a>
+          <div class="contact-social">
+            <p>Or connect via social:</p>
+            <div class="footer-social-links">
+              <a href="#">LinkedIn</a><a href="#">X</a><a href="#">Instagram</a>
+            </div>
+          </div>
         </aside>
       </div>
     </section>
@@ -141,24 +151,36 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img src="assets/hmdigital.png" alt="HMDigital logo">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/hmdigital.png" alt="HMDigital logo" class="logo-dark">
+            <img src="assets/HMDigital-logo-light.png" alt="HMDigital logo" class="logo-light">
+          </div>
+          <div>
+            <span class="brand-name">HMDigital</span>
+            <span class="footer-copy" data-i18n="footer.copy">
+              Quietly building confident digital experiences.
+            </span>
+          </div>
         </div>
-        <span class="brand-name">HMDigital</span>
-        <span class="footer-copy" data-i18n-key="footer.copy">
-          Quietly building confident digital experiences.
-        </span>
+        <div class="footer-social">
+          <span class="footer-social-label">Social</span>
+          <div class="footer-social-links">
+            <a href="#">LinkedIn</a><a href="#">X</a><a href="#">Instagram</a><a href="#">Behance</a>
+          </div>
+        </div>
       </div>
       <div class="footer-meta">
         <span>&copy; <span id="year"></span> HMDigital</span>
         <span class="footer-dot">•</span>
-        <a href="mailto:hello@hmdigital.agency" class="footer-link">hello@hmdigital.agency</a>
+        <a href="mailto:info@hmdigital.ch" class="footer-link">info@hmdigital.ch</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
+
 
 
 
